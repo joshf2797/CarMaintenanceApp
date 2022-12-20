@@ -44,3 +44,8 @@ fetch(carApiKey, {
     console.log(data);
   });
 
+if(screen.width < 485) {
+    document.getElementById("vinrelocation").style.display = "block";
+}
+
+

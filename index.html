@@ -6,22 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vehicle Maintenance Tracker</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
   </head>
   <body>
     <header>
-      <h1>Car Maintenance</h1>
+      <h1 class="title">Vehicle Information</h1>
     </header>
     <nav>
-      <div>
-        <p>Vin:</p>
-        <input class="vin" type="text" placeholder="17 Character Vin" />
+      <div class="vindiv">
+        <p class="vin">Vin:</p>
+        <input class="vininput" type="text" placeholder="17 Character Vin" />
       </div>
       <ul>
         <li><a href="">Home</a></li>
         <li><a href="">Oil Tracker</a></li>
-        <li><a href="">Other</a></li>
+        <li><a href="">Charge Locater</a></li>
       </ul>
     </nav>
     <script src="./assets/script.js"></script>
+    <div class="vinrelocation" id="vinrelocation">
+      <p class="vin2">Vin:</p>
+      <input class="vininput2" type="text" placeholder="17 Character Vin" />
+    </div>
+    <section class="main">
+      <div>
+        <img
+          class="vehicleimg"
+          src="assets/images/stockphoto1.jpeg"
+          alt="stock image"
+        />
+      </div>
+      <div>
+        <div class="vehicleinfocontainer">
+          <h1 class="vehicleinfotitle">Vehicle Information</h1>
+          <p id="vin">Vin:</p>
+          <p id="year">Year:</p>
+          <p id="make">Make:</p>
+          <p id="model">Model:</p>
+          <p id="trim">Trim:</p>
+          <p id="engine">Engine:</p>
+          <p id="trans">Transmission:</p>
+        </div>
+      </div>
+    </section>
+    <script src="assets/script.js"></script>
   </body>
 </html>
