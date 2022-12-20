@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vehicle Maintenance Tracker</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
     <link
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -18,7 +18,13 @@
     <nav>
       <div class="vindiv">
         <p class="vin">Vin:</p>
-        <input class="vininput" type="text" placeholder="17 Character Vin" />
+        <input
+          class="vininput"
+          id="vininput"
+          type="text"
+          placeholder="17 Character Vin"
+        />
+        <button id="submitvin">Submit</button>
       </div>
       <ul>
         <li><a href="">Home</a></li>
