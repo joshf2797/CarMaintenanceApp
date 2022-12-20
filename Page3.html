@@ -5,40 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vehicle Maintenance Tracker</title>
-    <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/CSS/page3.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
   </head>
   <body>
     <header>
-      <h1>Car Maintenance</h1>
+      <h1 class="toptitle">Charge Locater</h1>
     </header>
-    <nav>
-      <div>
-        <p>Vin:</p>
-        <input class="vin" type="text" placeholder="17 Character Vin" />
+    <nav class="nav1">
+      <div class="zipdiv">
+        <p class="zip">Zip Code:</p>
+        <input
+          class="zipinput"
+          id="zipinput"
+          type="text"
+          placeholder="Zip Code"
+        />
+        <button class="submitzip">Submit</button>
       </div>
       <ul>
         <li><a href="">Home</a></li>
         <li><a href="">Oil Tracker</a></li>
-        <li><a href="">Other</a></li>
+        <li><a href="">Charge Locater</a></li>
       </ul>
     </nav>
+    <div class="ziprelocation" id="ziprelocation">
+      <p class="zip2">Zip Code:</p>
+      <input class="zipinput2" type="text" placeholder="Zip Code" />
+      <button class="submitzip2">Submit</button>
+    </div>
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <p class="title">Year:</p>
+          <p class="title1">Year:</p>
           <p class="subtitle"></p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <p class="title">Make:</p>
+          <p class="title1">Make:</p>
           <p class="subtitle"></p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <p class="title">Model:</p>
+          <p class="title1">Model:</p>
           <p class="subtitle"></p>
           <div class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
@@ -52,11 +67,11 @@
         <div class="tile">
           <div class="tile is-parent is-vertical">
             <article class="tile is-child box">
-              <p class="title">Zipcode:</p>
+              <p class="title1">Zipcode:</p>
               <p class="subtitle"></p>
             </article>
             <article class="tile is-child box">
-              <p class="title">(Maybe) </p>
+              <p class="title1">(Maybe) </p>
               <p class="subtitle">Bottom box</p>
             </article>
           </div>
@@ -72,7 +87,7 @@
         </div>
         <div class="tile is-parent">
           <article class="tile is-child box">
-            <p class="title">(Maybe)</p>
+            <p class="title1">(Maybe)</p>
             <p class="subtitle">Aligned with the right column</p>
             <div class="content">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
@@ -83,7 +98,7 @@
       <div class="tile is-parent">
         <article class="tile is-child box">
           <div class="content">
-            <p class="title">(Maybe) Charging station reviews</p>
+            <p class="title1">(Maybe) Charging station reviews</p>
             <p class="subtitle">With even more content</p>
             <div class="content">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
