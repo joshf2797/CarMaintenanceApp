@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+}
+  
+header {
+  height: 150px;
+  text-align: center;
+  font-size: 200%;
+  margin-top: 0;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: black;
+  background-image: url(https://img.freepik.com/free-photo/mechanic-hand-checking-fixing-broken-car-car-service-garage_146671-19718.jpg?w=1380&t=st=1671151716~exp=1671152316~hmac=aad2d3684a0679d7092919151b96dd8ec67bef50b003cae78fa074085fcc56bc);
+  background-position: center;
+  background-size: cover;
+  opacity: 80%;
+}
+  
+h1 {
+  margin: auto;
+  padding-top: 50px;
+  color: rgb(185, 15, 15);
+}
+  
+nav {
+  display: flex;
+  height: 35px;
+  position: relative;
+  background-color: rgb(185, 15, 15);
+}
+  
+div {
+  flex: 1;
+}
+  
+p {
+  position: relative;
+  justify-content: center;
+  display: inline-block;
+  padding-left: auto;
+  margin: 7px;
+  color: aliceblue;
+}
+  
+.vin {
+  position: relative;
+  margin: auto;
+  width: 75%;
+}
+  
+.items {
+  list-style: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 1px;
+  border-top-left-radius: 30px;
+  padding: 17px 0 0 15px;
+  margin-bottom: 0;
+  width: 90px;
+}
+  
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+  
+.directory {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex: 1;
+  margin: 0;
+}
+  
+@media screen and (max-width: 575px) {
+  ul {
+    padding: 0;
+  }
+  h1 {
+    font-size: 150%;
+  }
+  p {
+    display: none;
+  }
+  .vin {
+    width: auto;
+    margin: 7px 0 0 5px;
+  }
+}
+  
+@media screen and (max-width: 485px) {
+}
+  
+img {
+  height: 325px;
+  width: 615px;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: -4%;
+}
+.oil-list {
+  list-style: none;
+  display: block;
+  margin-top: 6%;
+}
+
+.oil-items {
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.75;
+  color: #555;
+  text-align: justify;
+  background-color: #eee;
+  /* border: .5px solid rgb(185, 15, 15); */
+  margin-top: .5%;
+  margin-right: 5%;
+  margin-left: 45%;
+}
+  
