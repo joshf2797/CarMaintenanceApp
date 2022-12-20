@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: rgba(0, 0, 0, 0.263);
 }
 
 header {
@@ -7,16 +8,13 @@ header {
   text-align: center;
   font-size: 200%;
   margin-top: 0;
-  border-style: solid;
-  border-width: 0 0 2px 0;
-  border-color: black;
   background-image: url(https://img.freepik.com/free-photo/mechanic-hand-checking-fixing-broken-car-car-service-garage_146671-19718.jpg?w=1380&t=st=1671151716~exp=1671152316~hmac=aad2d3684a0679d7092919151b96dd8ec67bef50b003cae78fa074085fcc56bc);
   background-position: center;
   background-size: cover;
   opacity: 80%;
 }
 
-h1 {
+.title {
   margin: auto;
   padding-top: 50px;
   color: rgb(185, 15, 15);
@@ -24,16 +22,28 @@ h1 {
 
 nav {
   display: flex;
-  height: 35px;
+  height: 37px;
   position: relative;
+  border-style: solid;
+  border-width: 2px 0 0 0;
+  border-color: black;
   background-color: rgb(185, 15, 15);
 }
 
-div {
+.vinrelocation {
+  display: none;
+  position: relative;
+  justify-content: center;
+  height: 35px;
+  background-color: rgb(185, 15, 15);
+}
+
+.vindiv {
   flex: 1;
 }
 
-p {
+.vin,
+.vin2 {
   position: relative;
   justify-content: center;
   display: inline-block;
@@ -42,7 +52,8 @@ p {
   color: aliceblue;
 }
 
-.vin {
+.vininput,
+.vininput2 {
   position: relative;
   margin: auto;
   width: 75%;
@@ -52,11 +63,10 @@ li {
   list-style: none;
   border-style: solid;
   border-color: black;
-  border-width: 1px 0 0 1px;
+  border-width: 0 0 0 2px;
   border-top-left-radius: 30px;
-  padding: 17px 0 0 15px;
+  padding: 19px 0 0 15px;
   margin-bottom: 0;
-  width: 90px;
 }
 
 a {
@@ -69,24 +79,77 @@ ul {
   justify-content: space-between;
   align-items: flex-end;
   flex: 1;
-  margin: 0;
+  margin: 0 20px 0 10px;
 }
 
-@media screen and (max-width: 575px) {
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.vehicleimg {
+  width: 100%;
+  margin: 50px auto 50px 50px;
+}
+
+.vehicleinfocontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  width: 50%;
+  height: fit-content;
+  margin: 50px auto 50px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.vehicleinfotitle {
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 595px) {
+  nav {
+    display: block;
+  }
   ul {
     padding: 0;
   }
-  h1 {
+  .title {
     font-size: 150%;
   }
-  p {
+  .vin {
     display: none;
   }
-  .vin {
-    width: auto;
-    margin: 7px 0 0 5px;
+  .vininput {
+    display: none;
+  }
+  .vinrelocation {
+    display: block;
+  }
+  .vehicleimg {
+    margin: 25px 0 0 25px;
+    width: 100%;
+  }
+  .vehicleinfocontainer {
+    margin: 25px auto 0 auto;
   }
 }
 
-@media screen and (max-width: 485px) {
+@media screen and (max-width: 575px) {
+}
+
+@media screen and (max-width: 410px) {
+  .title {
+    padding-top: 20px;
+  }
 }
