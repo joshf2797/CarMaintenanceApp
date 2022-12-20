@@ -1,37 +1,11 @@
-// var miles = document.querySelector("#milesinput");
-// var date = document.querySelector("#dateinput");
-// var drive = document.querySelector("#driveninput");
 var btn = document.querySelector("#submitbtn");
 var msgDiv = document.querySelector("#msg");
 
-
-
-
-// renderLastRegistered();
-
-// function displayMessage(type, message) {
-//   msgDiv.textContent = message;
-//   msgDiv.setAttribute("class", type);
-// }
-
-// function renderLastRegistered() {
-//   var email = localStorage.getItem("email");
-//   var password = localStorage.getItem("password");
-
-//   if (!email || !password) {
-//     return;
-//   }
-
-//   userEmailSpan.textContent = email;
-//   userPasswordSpan.textContent = password;
-// }
 
 function displayMessage(type, message) {
     msgDiv.textContent = message;
     msgDiv.setAttribute("class", type);
   }
-
-
 
 btn.addEventListener("click", function(event) {
   event.preventDefault();
