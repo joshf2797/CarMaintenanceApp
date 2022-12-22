@@ -15,17 +15,17 @@ btn.addEventListener("click", function(event) {
   var drive = document.querySelector("#driveninput").value;
 
   if (miles === "") {
-    displayMessage("error" , "Cannot be blank");
+    displayMessage("error" , "Must Input Number of Miles");
   } else if (date === "") {
-    displayMessage("error" , "Cannot be blank");
+    displayMessage("error" , "Must Input Date");
   } else if (drive === "") {
-    displayMessage("error" , "Cannot be blank");
+    displayMessage("error" , "Must Input Number of Daily Miles");
   } else {
     displayMessage("success", "Good Work");
 
     localStorage.setItem("milesInput", miles);
     localStorage.setItem("dateInput", date);
-    localStorage.setItem("driveInputd", drive );
+    localStorage.setItem("driveInput", drive);
 
    }
 }
