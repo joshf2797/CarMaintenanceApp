@@ -1,7 +1,7 @@
 body {
   margin: 0;
 }
-  
+
 header {
   height: 150px;
   text-align: center;
@@ -15,91 +15,55 @@ header {
   background-size: cover;
   opacity: 80%;
 }
-  
+
 h1 {
   margin: auto;
   padding-top: 50px;
   color: rgb(185, 15, 15);
 }
-  
+
 nav {
-  display: flex;
-  height: 35px;
-  position: relative;
+  height: 37px;
+  border-width: 2px 0 0 0;
+  border-color: black;
   background-color: rgb(185, 15, 15);
 }
-  
-div {
-  flex: 1;
-}
-  
-p {
-  position: relative;
-  justify-content: center;
-  display: inline-block;
-  padding-left: auto;
-  margin: 7px;
-  color: aliceblue;
-}
-  
-.vin {
-  position: relative;
-  margin: auto;
-  width: 75%;
-}
-  
+
 .items {
   list-style: none;
   border-style: solid;
   border-color: black;
   border-width: 0 0 0 2px;
   border-top-left-radius: 30px;
-  padding: 19px 0 0 15px;
+  padding: 19px 40px 0 15px;
   margin-bottom: 0;
 }
-  
+
 a {
   text-decoration: none;
   color: aliceblue;
 }
-  
+
 .directory {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: flex-end;
-  flex: 1;
-  margin: 0;
+  flex: 2;
+  margin: 0 10px 0 10px;
 }
-  
-@media screen and (max-width: 575px) {
-  ul {
-    padding: 0;
-  }
-  h1 {
-    font-size: 150%;
-  }
-  p {
-    display: none;
-  }
-  .vin {
-    width: auto;
-    margin: 7px 0 0 5px;
-  }
-}
-  
-@media screen and (max-width: 485px) {
-}
-  
+
 img {
-  height: 325px;
-  width: 615px;
-  position: absolute;
-  margin-left: 5%;
-  margin-top: -4%;
+  width: 75%;
 }
+
+.oilchange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .oil-list {
+  width: 75%;
   list-style: none;
-  display: block;
   margin-top: 6%;
 }
 
@@ -109,14 +73,16 @@ img {
   font-weight: 500;
   line-height: 1.75;
   color: #555;
-  text-align: justify;
   background-color: #eee;
-  /* border: .5px solid rgb(185, 15, 15); */
-  margin-top: .5%;
-  margin-right: 5%;
-  margin-left: 45%;
 }
-  
+
+.img {
+  flex: 1;
+}
+
+.oilinput {
+  flex: 1;
+}
 
 #msg {
   visibility: hidden;
@@ -125,7 +91,6 @@ img {
   height: 1.2em;
   font-size: 1.2em;
   text-align: center;
-
 }
 
 #msg.success,
@@ -134,7 +99,7 @@ img {
 }
 
 #msg.success {
-  color: #001b44;;
+  color: #001b44;
 }
 
 #msg.error {
