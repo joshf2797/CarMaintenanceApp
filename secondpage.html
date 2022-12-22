@@ -5,39 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vehicle Maintenance Tracker</title>
-    <link rel="stylesheet" href="assets/secondstyle.css" />
+    <link rel="stylesheet" href="assets/css/secondstyle.css" />
   </head>
   <body>
     <header>
       <h1>Oil Tracker</h1>
     </header>
     <nav>
-      <div>
-        <p>Vin:</p>
-        <input class="vin" type="text" placeholder="17 Character Vin" />
-      </div>
       <ul class="directory">
-        <li class="items"><a href="">Home</a></li>
-        <li class="items"><a href="">Oil Tracker</a></li>
-        <li class="items"><a href="">Charge Locater</a></li>
+        <li class="items"><a href="index.html">Home</a></li>
+        <li class="items"><a href="secondpage.html">Oil Tracker</a></li>
+        <li class="items"><a href="Page3.html">Charge Locater</a></li>
       </ul>
     </nav>
 
     <section class="oilchange">
-      <img src="assets/images/red-truck.jpg" alt="red-truck">
-      <ul class="oil-list">
-
-        <li class="oil-items">Number of miles at last oil change <input id="milesinput" type="text" placeholder="Enter Amount Here"/> </li>
-
-        <li class="oil-items">Date of last oil change <input id="dateinput" type="text" placeholder="Enter Date Here"/></li>
-
-        <li class="oil-items">Number of miles driven daily <input id="driveninput" type="text" placeholder="Enter Amount Here"/> <button id="submitbtn">Submit</button></li> 
-        
-
-        <li class="oil-items">Days until next oil change:</li>
-      </ul>
-      <div id="msg"></div>
+      <div class="img">
+        <img src="assets/images/red-truck.jpg" alt="red-truck" />
+      </div>
+      <div class="oilinput">
+        <ul class="oil-list">
+          <li class="oil-items">
+            Number of miles at last oil change
+            <input
+              id="milesinput"
+              type="text"
+              placeholder="Enter Amount Here"
+            />
+          </li>
+          <li class="oil-items">
+            Date of last oil change
+            <input id="dateinput" type="text" placeholder="Enter Date Here" />
+          </li>
+          <li class="oil-items">
+            Number of miles driven daily
+            <input
+              id="driveninput"
+              type="text"
+              placeholder="Enter Amount Here"
+            />
+            <button id="submitbtn">Submit</button>
+          </li>
+          <li class="oil-items">Days until next oil change:</li>
+        </ul>
+      </div>
     </section>
-    <script src="./assets/script.2.js"></script>
+    <div id="msg"></div>
+    <script src="./assets/js/script.2.js"></script>
   </body>
 </html>
