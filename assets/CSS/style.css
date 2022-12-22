@@ -57,6 +57,7 @@ nav {
   position: relative;
   margin: auto;
   width: 60%;
+  text-transform: uppercase;
 }
 
 li {
