@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vehicle Maintenance Tracker</title>
-  <link rel="stylesheet" href="assets/css/secondstyle.css" />
+  <link rel="stylesheet" href="assets/css/style2.css" />
 </head>
 
 <body>
@@ -28,34 +27,27 @@
     <div class="oilinput">
       <ul class="oil-list">
         <li class="oil-items">
-          Number of Miles at Last Oil Change
-          <input id="milesinput" type="text" placeholder="Enter Amount Here" />
+          Current Milage:
+          <input id="milesInput" type="text" placeholder="Enter Amount Here" />
         </li>
         <li class="oil-items">
-          Date of Last Oil Change
-          <input id="dateinput" type="text" placeholder="Enter Date Here" />
+          Miles until Next Oil Change:
+          <input id="oilInput" type="text" placeholder="Enter Date Here" />
+          <button id="submitBtn">Submit</button>
         </li>
-        <li class="oil-items">
-          Number of Miles Driven Daily
-          <input id="driveninput" type="text" placeholder="Enter Amount Here" />
-          <button id="submitbtn">Submit</button>
-        </li>
-        <li class="oil-items">Days until Next Oil Change:</li>
       </ul>
     </div>
-  </section>
-  <section>
     <div class="userData">
-      <h2>Miles at Last Oil Change</h2>
+      <h2>Current Milage</h2>
       <p id="userMiles"></p>
-      <h2>Date of Last Oil Change</h2>
-      <p id="userDate"></p>
-      <h2>Number of Miles Driven Daily</h2>
-      <p id="userNumber"></p>
+      <h2>Miles until Next Oil Change</h2>
+      <p id="nextOil"></p>
+      <h2>Next Oil Change Due at</h2>
+      <p id="sumOil"></p>
     </div>
   </section>
   <div id="msg">
   </div>
-  <script src="./assets/js/script.2.js"></script>
+  <script src="./assets/js/script2.js"></script>
 </body>
 </html>
