@@ -21,21 +21,32 @@ submit.addEventListener('click', function(event) {
     console.log('engine:', data.Results[70].Value)
     console.log('trans:', data.Results[49].Value)
     console.log('gas:', data.Results[77].Value)
-
-    // function vinInfo(data) {
-    //   var vinData = {
-    //     year: data.Results[10].Value,
-    //     make: data.Results[7].Value,
-    //     model: data.Results[9].Value,
-    //     body: data.Results[23].Value,
-    //     engine: data.Results[70].Value,
-    //     trans: data.Results[49].Value,
-    //     gas: data.Results[77].Value
-    //   }
-    //   document.getElementById('year').innerHTML = 'Year: ' + vinData.year
-    // }
+    vinInfo(data)
   });
+  
+  function vinInfo(data) {
+    var vinData = {
+      year: data.Results[10].Value,
+      make: data.Results[7].Value,
+      model: data.Results[9].Value,
+      body: data.Results[23].Value,
+      engine: data.Results[70].Value,
+      trans: data.Results[49].Value,
+      gas: data.Results[77].Value
+    }
+    addVinInfo(vinData)
+  }
+ 
+function addVinInfo (vinData) {
+  document.getElementById('year').innerHTML = 'Year: ' + vinData.year
+  document.getElementById('make').innerHTML = 'Make: ' + vinData.make
+  document.getElementById('model').innerHTML = 'Model: ' + vinData.model
+  document.getElementById('body').innerHTML = 'Body Style: ' + vinData.body
+  document.getElementById('engine').innerHTML = 'Engine Cylinders: ' + vinData.engine
+  document.getElementById('trans').innerHTML = 'Transmission Type: ' + vinData.trans
+  document.getElementById('gas').innerHTML = 'Gas Type: ' + vinData.gas
 
+}
   
 
   localStorage.setItem('VIN', vinInput)
