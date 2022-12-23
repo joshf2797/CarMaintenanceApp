@@ -105,3 +105,7 @@ img {
 #msg.error {
   color: #e6252c;
 }
+
+.userData p {
+  padding-left: 2%;
+}
