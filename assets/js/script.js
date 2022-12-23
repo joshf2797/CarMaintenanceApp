@@ -14,11 +14,12 @@ submit.addEventListener('click', function(event) {
   })
   .then(function (data) {
     console.log(data);
+    console.log(data.results.value)
   });
 
 
     localStorage.setItem('VIN', vinInput)
-    
+  
   })
 
   vin.value = localStorage.getItem('VIN')

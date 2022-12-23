@@ -21,7 +21,7 @@ function compareZip() {
     };
 
 function zipCompareCycle(data) {
-  var userZip = document.getElementById("userInput").value;
+  var userZip = document.getElementById("zipInput").value;
   for (var i = 0; i < data.length; i++) {
       var zipCode = data[i].AddressInfo.Postcode
       var dataObj = {
@@ -32,17 +32,25 @@ function zipCompareCycle(data) {
       if (zipCode == userZip) {
           console.log(dataObj)
           addText (dataObj);
+          return
       }
       else {
-          console.log("no results")
+        displayZip.innerHTML = "No Results Found"
+        displayAddress.innerHTML = ""
+        displayTitle.innerHTML = ""
       }
   }
 }
-var cycleZip = document.querySelector("#userButton");
+var cycleZip = document.querySelector(".submitZip");
 cycleZip.addEventListener("click", function() {
   compareZip ()
 });
-var displayObject = document.querySelector("#objectList");
+var displayZip = document.querySelector("#enteredZip");
+var displayAddress = document.querySelector("#enteredAddress");
+var displayTitle = document.querySelector("#enteredTitle");
 function addText (dataObj) {
-  displayObject.innerHTML = dataObj.zip
+  displayZip.innerHTML = dataObj.zip
+  displayAddress.innerHTML = dataObj.address
+  displayTitle.innerHTML = dataObj.name
 }
+

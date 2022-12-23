@@ -21,11 +21,11 @@
         <p class="zip">Zip Code:</p>
         <input
           class="zipinput"
-          id="zipinput"
+          id="zipInput"
           type="text"
           placeholder="Zip Code"
         />
-        <button class="submitzip">Submit</button>
+        <button class="submitZip">Submit</button>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -33,53 +33,42 @@
         <li><a href="Page3.html">Charge Locater</a></li>
       </ul>
     </nav>
+    
     <div class="ziprelocation" id="ziprelocation">
       <p class="zip2">Zip Code:</p>
       <input class="zipinput2" type="text" placeholder="Zip Code" />
       <button class="submitzip2">Submit</button>
     </div>
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title">Zipcode:</p>
-          <p class="subtitle"></p>
+
+    <div class="columns">
+      <div class="column is-two-thirds">
+        <article class="box">
+          <p class="title">Looking for nearby charging stations</p>
+          <figure class="image is-4by3"> <img src="https://www.ai4beginners.com/wp-content/uploads/2020/05/electricity-3459169_1920.jpg"> </figure>
         </article>
       </div>
-      <div class="tile is-parent">
-      </div>
-      <div class="tile is-parent">
-          </div>
-        </article>
-      </div>
-    </div>
     
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-8">
-        <div class="tile">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child box">
-              <p class="title">Address Line 1:</p>
-              <p class="subtitle"></p>
-            </article>
-            <article class="tile is-child box">
-              <p class="title">Title:</p>
-              <p class="subtitle"></p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Looking for nearby charging stations</p>
-              
-              <figure class="image is-4by3">
-                <img src="https://www.ai4beginners.com/wp-content/uploads/2020/05/electricity-3459169_1920.jpg">
-              </figure>
-            </article>
-          </div>
-        </div>
-        
-          </div>
+
+      <div class="column">
+        <article class="box">
+          <p class="title">Zipcode:</p>
+          <p class="subtitle" id="enteredZip"></p>
         </article>
-      </div>
+      
+        <article class="box">
+          <p class="title">Address Line 1:</p>
+          <p id="enteredAddress"></p>
+        </article>
+
+        <article class="box">
+          <p class="title">Title:</p>
+          <p id="enteredTitle"></p>
+        </article>
+        </div>
     </div>
+
+
+
+    <script src="./assets/js/script3.js"></script>
     </body>
 </html>
