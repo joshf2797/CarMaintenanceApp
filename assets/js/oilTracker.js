@@ -25,6 +25,7 @@ function getInput() {
   oilUserInput.textContent = getOil;
   sumCalc.textContent = getSum;
 }
+
 //The equation 
 function getSum() {
   var num1 = parseInt(document.querySelector("#milesInput").value);
