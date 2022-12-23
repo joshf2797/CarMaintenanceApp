@@ -58,7 +58,7 @@ img {
 
 .oilchange {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .oil-list {
@@ -106,6 +106,15 @@ img {
   color: #e6252c;
 }
 
+
+.userData {
+  text-align: right;
+  margin-right: 30%;
+
+}
+
 .userData p {
-  padding-left: 2%;
+  font-weight: 700;
+  color: rgb(185, 15, 15);
+  text-align: right;
 }

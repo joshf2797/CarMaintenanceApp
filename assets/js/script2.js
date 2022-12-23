@@ -1,68 +1,48 @@
-var btn = document.querySelector("#submitbtn");
+var btn = document.querySelector("#submitBtn");
 var msgDiv = document.querySelector("#msg");
 var milesUserInput = document.querySelector("#userMiles");
-var dateUserInput = document.querySelector("#userDate");
-var numberUserInput = document.querySelector("#userNumber")
-  
+var oilUserInput = document.querySelector("#nextOil");
+var sumCalc = document.querySelector("#sumOil");
 
-function displayMessage(type, message) {
-  msgDiv.textContent = message;
-  msgDiv.setAttribute("class", type);
+
+//This is the function to get the user input to save to local storage
+function setInput(sum) {
+  var setMiles = document.querySelector("#milesInput").value;
+  var setOil = document.querySelector("#oilInput").value;
+  
+  localStorage.setItem("milesInput", setMiles);
+  localStorage.setItem("oilInput", setOil);
+  localStorage.setItem("sumOil", sum)
 }
 
-// function usersInput() {
-//   var miles = localStorage.getItem("milesinput");
-
-//   milesUserInput.innerHTML = miles;
-// }
-
-function setInput() {
-  var miles = document.querySelector("#milesinput").value;
-  var date = document.querySelector("#dateinput").value;
-  var drive = document.querySelector("#driveninput").value;
-
-  localStorage.setItem("milesInput", miles);
-  localStorage.setItem("dateInput", date);
-  localStorage.setItem("driveInput", drive);
-  
-}
-
+//This is the function to get the user input to stay on webpage
 function getInput() {
-  var miles = localStorage.getItem("milesInput");
-  var date = localStorage.getItem("dateInput");
-  var drive = localStorage.getItem("driveInput");
-  console.log("miles", miles);
+  var getMiles = localStorage.getItem("milesInput");
+  var getOil = localStorage.getItem("oilInput");
+  var getSum = localStorage.getItem("sumOil"); 
+  
+  milesUserInput.textContent = getMiles;
+  oilUserInput.textContent = getOil;
+  sumCalc.textContent = getSum;
+}
+//The equation 
+function getSum() {
+  var num1 = parseInt(document.querySelector("#milesInput").value);
+  var num2 = parseInt(document.querySelector("#oilInput").value);
+  var sumOil = document.querySelector("#sumOil");
 
-  milesUserInput.textContent = miles;
-  dateUserInput.textContent = date;
-  numberUserInput.textContent = drive;
+  var sum = num1+num2;
+  console.log(sum);
 
+  sumOil.textContent = sum;
+  setInput(sum);
+  getInput();
 }
 
+//Once the submit button is clicked the getSum function and getInput  
 btn.addEventListener("click", function(event) {
   event.preventDefault();
-  setInput();
-  getInput();
-
-  // var miles = document.querySelector("#milesinput").value;
-  // var date = document.querySelector("#dateinput").value;
-  // var drive = document.querySelector("#driveninput").value;
-
-  // if (miles === "") {
-  //   displayMessage("error" , "Must Input Number of Miles");
-  // } else if (date === "") {
-  //   displayMessage("error" , "Must Input Date");
-  // } else if (drive === "") {
-  //   displayMessage("error" , "Must Input Number of Daily Miles");
-  // } else {
-  //   displayMessage("success", "Good Work");
-
-    // localStorage.setItem("milesInput", miles);
-    // localStorage.setItem("dateInput", date);
-    // localStorage.setItem("driveInput", drive);
-    
-  
-   })
-// });
+  getSum();
+  });
 
 getInput() 
