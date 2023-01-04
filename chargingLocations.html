@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vehicle Charge Locator</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -14,63 +17,61 @@
   </head>
 
   <body>
-
     <header>
       <h1 class="toptitle">Charge Locator</h1>
     </header>
 
     <nav class="nav1">
-      <div class="zipdiv">
-        <p class="zip">Zip Code:</p>
-        <input
-          class="zipinput"
-          id="zipInput"
-          type="text"
-          placeholder="Zip Code"
-        />
-        <button class="submitZip">Submit</button>
-      </div>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="oilTracker.html">Oil Tracker</a></li>
         <li><a href="chargingLocations.html">Charge Locator</a></li>
       </ul>
     </nav>
-    
-    <div class="ziprelocation" id="ziprelocation">
-      <p class="zip2">Zip Code:</p>
-      <input class="zipinput2" type="text" placeholder="Zip Code" />
-      <button class="submitzip2">Submit</button>
-    </div>
 
     <div class="columns">
-
       <div class="column is-two-thirds">
         <article class="box">
           <p class="title">Looking for nearby charging stations</p>
-          <figure class="image is-4by3"> <img src="https://www.ai4beginners.com/wp-content/uploads/2020/05/electricity-3459169_1920.jpg"> </figure>
+          <figure class="image is-4by3">
+            <img
+              src="https://www.ai4beginners.com/wp-content/uploads/2020/05/electricity-3459169_1920.jpg"
+            />
+          </figure>
         </article>
       </div>
-    
+
       <div class="column">
         <article class="box">
           <p class="title">Zipcode:</p>
-          <p class="subtitle" id="enteredZip"></p>
+          <div class="zipdiv">
+            <p class="zip">Zip Code:</p>
+            <input
+              class="zipinput"
+              id="zipInput"
+              type="text"
+              placeholder="Zip Code"
+            />
+            <button class="submitZip">Submit</button>
+          </div>
         </article>
-      
+
         <article class="box">
-          <p class="title">Address Line 1:</p>
+          <p class="title">Address:</p>
           <p id="enteredAddress"></p>
         </article>
 
         <article class="box">
-          <p class="title">Title:</p>
+          <p class="title">Name:</p>
           <p id="enteredTitle"></p>
         </article>
       </div>
     </div>
-
+    <footer>
+      <div>
+        <p class="footermes">This Project was Made by Team High-Five!</p>
+      </div>
+    </footer>
     <script src="./assets/js/chargingLocations.js"></script>
-    
-    </body>
+  </body>
 </html>
