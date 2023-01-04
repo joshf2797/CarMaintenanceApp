@@ -86,5 +86,6 @@ If the user enters a zip code with a charging location available, they will see 
 # Team High-Five
 
 - Joshua Fenn
+- Marcus Paccapaniccia
 - Karina Morrison
 - Brayin Lanehart
