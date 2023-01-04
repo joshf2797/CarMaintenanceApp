@@ -1,3 +1,9 @@
+:root {
+  --black: rgb(0, 0, 0);
+  --red: rgb(185, 15, 15);
+  --font: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.263);
@@ -12,11 +18,12 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--black);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 #modalText {
+  font-family: var(--font);
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
@@ -34,7 +41,7 @@ body {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: var(--black);
   text-decoration: none;
   cursor: pointer;
 }
@@ -43,6 +50,7 @@ header {
   height: 150px;
   text-align: center;
   font-size: 200%;
+  font-family: var(--font);
   margin-top: 0;
   background-image: url(https://img.freepik.com/free-photo/mechanic-hand-checking-fixing-broken-car-car-service-garage_146671-19718.jpg?w=1380&t=st=1671151716~exp=1671152316~hmac=aad2d3684a0679d7092919151b96dd8ec67bef50b003cae78fa074085fcc56bc);
   background-position: center;
@@ -53,7 +61,7 @@ header {
 .title {
   margin: auto;
   padding-top: 50px;
-  color: rgb(185, 15, 15);
+  color: var(--red);
 }
 
 nav {
@@ -62,8 +70,8 @@ nav {
   position: relative;
   border-style: solid;
   border-width: 2px 0 0 0;
-  border-color: black;
-  background-color: rgb(185, 15, 15);
+  border-color: var(--black);
+  background-color: var(--red);
 }
 
 .vinrelocation {
@@ -71,7 +79,7 @@ nav {
   position: relative;
   justify-content: center;
   height: 35px;
-  background-color: rgb(185, 15, 15);
+  background-color: var(--red);
 }
 
 .vindiv {
@@ -86,6 +94,7 @@ nav {
   padding-left: auto;
   margin: 7px;
   color: aliceblue;
+  font-family: var(--font);
 }
 
 .vininput,
@@ -94,12 +103,13 @@ nav {
   margin: auto;
   width: 60%;
   text-transform: uppercase;
+  font-family: var(--font);
 }
 
 li {
   list-style: none;
   border-style: solid;
-  border-color: black;
+  border-color: var(--black);
   border-width: 0 0 0 2px;
   border-top-left-radius: 30px;
   padding: 19px 0 0 15px;
@@ -108,6 +118,7 @@ li {
 
 a {
   text-decoration: none;
+  font-family: var(--font);
   color: aliceblue;
 }
 
@@ -127,26 +138,42 @@ ul {
 .vehicleimg {
   width: 100%;
   margin: 50px auto 50px 50px;
+  border-radius: 10px;
 }
 
 .vehicleinfocontainer {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  border-radius: 10px;
   border-style: solid;
   border-width: 3px;
-  border-color: black;
+  border-color: var(--black);
   width: 50%;
   height: fit-content;
   margin: 50px auto 50px auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font);
 }
 
 .vehicleinfotitle {
   text-align: center;
 }
 
-@media screen and (max-width: 595px) {
+footer {
+  background-color: var(--red);
+  height: 75px;
+  margin-top: 10%;
+  font-family: var(--font);
+  font-size: 100%;
+  text-align: center;
+}
+
+.footermes {
+  padding-top: 30px;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 646px) {
   nav {
     display: block;
   }
@@ -172,19 +199,25 @@ ul {
   .vehicleinfocontainer {
     margin: 25px auto 0 auto;
   }
-}
-
-@media screen and (max-width: 575px) {
-}
-
-@media screen and (max-width: 410px) {
-  .title {
-    padding-top: 20px;
+  #submitvin {
+    display: none;
+  }
+  .submitvin2 {
+    display: inline-block;
   }
 }
 
-/* Set the size of the div element that contains the map */
-#map {
-  height: 400px; /* The height is 400 pixels */
-  width: 100%; /* The width is the width of the web page */
+@media screen and (max-width: 500px) {
+  .vehicleinfotitle {
+    font-size: 120%;
+  }
+  .vininfo {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 443px) {
+  .title {
+    padding-top: 20px;
+  }
 }

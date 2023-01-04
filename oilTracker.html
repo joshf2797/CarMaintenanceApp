@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vehicle Oil Tracker</title>
-  <link rel="stylesheet" href="./assets/CSS/oilTracker.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Oil Tracker</title>
+    <link rel="stylesheet" href="./assets/CSS/oilTracker.css" />
+  </head>
 
-<body>
-  <header>
-    <h1>Oil Tracker</h1>
-  </header>
-  <nav>
-    <ul class="directory">
-      <li class="items"><a href="index.html">Home</a></li>
-      <li class="items"><a href="oilTracker.html">Oil Tracker</a></li>
-      <li class="items"><a href="chargingLocations.html">Charge Locator</a></li>
-    </ul>
-  </nav>
-
-  <section class="oilchange">
-    <div class="img">
-      <img src="assets/images/Oil-Change-Warning.jpg" alt="oil-change" />
-    </div>
-    <div class="oilinput">
-      <ul class="oil-list">
-        <li class="oil-items">
-          Current Milage:
-          <input id="milesInput" type="text" placeholder="Enter Amount Here" />
-        </li>
-        <li class="oil-items">
-          Miles until Next Oil Change:
-          <input id="oilInput" type="text" placeholder="Enter Date Here" />
-          <button id="submitBtn">Submit</button>
+  <body>
+    <header>
+      <h1>Oil Tracker</h1>
+    </header>
+    <nav>
+      <ul class="directory">
+        <li class="items"><a href="index.html">Home</a></li>
+        <li class="items"><a href="oilTracker.html">Oil Tracker</a></li>
+        <li class="items">
+          <a href="chargingLocations.html">Charge Locator</a>
         </li>
       </ul>
-    </div>
-    <div class="userData">
-      <h2>Current Milage</h2>
-      <p id="userMiles"></p>
-      <h2>Miles until Next Oil Change</h2>
-      <p id="nextOil"></p>
-      <h2>Next Oil Change Due at</h2>
-      <p id="sumOil"></p>
-    </div>
-  </section>
-  <div id="msg">
-  </div>
-  <script src="./assets/js/oilTracker.js"></script>
-</body>
+    </nav>
+
+    <section class="oilchange">
+      <div class="img">
+        <img src="assets/images/Oil-Change-Warning.jpg" alt="oil-change" />
+      </div>
+      <div class="oilinput">
+        <ul class="oil-list">
+          <li class="oil-items">
+            Current Milage:
+            <input
+              id="milesInput"
+              type="text"
+              placeholder="Enter Amount Here"
+            />
+          </li>
+          <li class="oil-items">
+            Miles until Next Oil Change:
+            <input id="oilInput" type="text" placeholder="Enter Date Here" />
+            <button id="submitBtn">Submit</button>
+          </li>
+        </ul>
+      </div>
+      <div class="userData">
+        <h2>Current Milage</h2>
+        <p id="userMiles"></p>
+        <h2>Miles until Next Oil Change</h2>
+        <p id="nextOil"></p>
+        <h2>Next Oil Change Due at</h2>
+        <p id="sumOil"></p>
+      </div>
+    </section>
+    <div id="msg"></div>
+    <footer>
+      <div>
+        <p class="footermes">This Project was Made by Team High-Five!</p>
+      </div>
+    </footer>
+    <script src="./assets/js/oilTracker.js"></script>
+  </body>
 </html>

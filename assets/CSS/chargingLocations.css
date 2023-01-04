@@ -44,6 +44,7 @@ header {
   padding-left: auto;
   margin: 7px;
   color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .zipinput,
@@ -61,6 +62,10 @@ header {
   margin-bottom: 20px;
 }
 
+.columns {
+  padding: 10px;
+}
+
 li {
   list-style: none;
   border-style: solid;
@@ -74,6 +79,7 @@ li {
 a {
   text-decoration: none;
   color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -87,12 +93,26 @@ ul {
   min-height: 31.5%;
 }
 
-@media screen and (max-width: 755px) {
+footer {
+  background-color: rgb(185, 15, 15);
+  height: 75px;
+  margin-top: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  text-align: center;
+}
+
+.footermes {
+  padding-top: 30px;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 793px) {
   .zipinput {
     width: 50%;
   }
 }
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 643px) {
   .zip {
     display: none;
   }
@@ -100,7 +120,7 @@ ul {
     width: 65%;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
   .zipinput {
     display: none;
   }
@@ -118,6 +138,9 @@ ul {
   }
   .nav1 {
     margin-bottom: 0;
+  }
+  .submitZip {
+    display: none;
   }
 }
 @media screen and (max-width: 545px) {

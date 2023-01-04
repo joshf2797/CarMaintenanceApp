@@ -37,7 +37,9 @@ function zipCompare(data) {
       var dataObj = {
       address: data[i].AddressInfo.AddressLine1,
       name: data[i].AddressInfo.Title,
-      zip: data[i].AddressInfo.Postcode
+      zip: data[i].AddressInfo.Postcode,
+      city: data[i].AddressInfo.Town,
+      state: data[i].AddressInfo.StateOrProvince
       };
       //If statement to compare the entered Zipcode from the user with the zip codes from the API.  Runs the addText function if there is a match and exits the loop
       if (zipCode == userZip) {
@@ -46,8 +48,7 @@ function zipCompare(data) {
       }
 
       else {
-        displayZip.innerHTML = "No Results Found"
-        displayAddress.innerHTML = ""
+        displayAddress.innerHTML = "No Results Found"
         displayTitle.innerHTML = ""
       }
   };
@@ -60,8 +61,7 @@ cycleZip.addEventListener("click", function() {
 
 //Function to add text to the HTML to display the zip code, address, and name of the charging location if it matches the user inputted zipcode
 function addText (dataObj) {
-  displayZip.innerHTML = dataObj.zip
-  displayAddress.innerHTML = dataObj.address
+  displayAddress.innerHTML = dataObj.address + " " + dataObj.city + ", " + dataObj.state
   displayTitle.innerHTML = dataObj.name
 };
 
